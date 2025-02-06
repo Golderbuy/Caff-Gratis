@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%; /* Impostiamo una larghezza percentuale per una visualizzazione più fluida su dispositivi mobili */
+            max-width: 400px; /* Limitiamo la larghezza massima per i dispositivi più grandi */
+        }
+        img {
+            width: 120px; /* Immagine di logo più piccola per adattarsi su mobile */
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%; /* L'input occupa tutta la larghezza disponibile */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Assicura che il padding non influisca sulla larghezza totale */
+        }
+        button {
+            background-color: #FF6F00; /* arancione */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%; /* Il bottone occupa tutta la larghezza disponibile */
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #ff8c00;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://buonristoro.com/wp-content/uploads/2020/01/cropped-LOGO-BUONRISTORO-1.jpg" alt="Logo"> <!-- Immagine del logo -->
+        <h1>Accedi</h1>
+        <form action="#" method="POST">
+            <input type="text" name="username" placeholder="Nome Utente" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <a href=".\ci_sei_caduto.html"> <!-- Sostituisci con il link desiderato -->
+                <button type="button">Invia</button>
+            </a>
+        </form>
+    </div>
+</body>
+</html>
